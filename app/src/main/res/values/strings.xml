@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Helbby</string>
+    <string name="email">Correo electronico</string>
+    <string name="password">Contraseña</string>
+    <string name="forgotPass">¿Olvidaste tu contraseña?</string>
+    <string name="ingresarLogin"> INGRESAR </string>
+    <string name="noTienesCuenta"> No tienes cuenta, registrate.</string>
+    <string name="registrarse"> Registrarse </string>
+    <string name="nombre">Nombre</string>
+    <string name="confirmarcontraseña">Confirmar contraseña</string>
+    <string name="introducePassword"> Introduce tu correo electronico. </string>
+    <string name="recuperarContraeña"> Recuperar </string>
+    <string name="facebook_app_id">1380578515324145</string>
+    <string name="cancel_login">CANCELADO</string>
+    <string name="ocurrio_error">ERROR</string>
+    <string name="requerimientos"> Al registrarse, confirmo que estoy de acuerdo con las siguientes condiciones de Helbby: </string>
+</resources>
