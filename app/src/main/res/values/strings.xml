@@ -3,7 +3,7 @@
     <string name="email">Correo electronico</string>
     <string name="password">Contraseña</string>
     <string name="forgotPass">¿Olvidaste tu contraseña?</string>
-    <string name="ingresarLogin"> INGRESAR </string>
+    <string name="ingresarLogin"> Iniciar sesión </string>
     <string name="noTienesCuenta"> No tienes cuenta, registrate.</string>
     <string name="registrarse"> Registrarse </string>
     <string name="nombre">Nombre</string>

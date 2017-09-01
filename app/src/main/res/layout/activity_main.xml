@@ -51,7 +51,7 @@
             android:layout_marginBottom="1sp"
             android:layout_marginLeft="10sp"
             android:textColorHint="@color/md_grey_100"
-            android:textColor="@color/md_grey_100"
+            android:textColor="@color/md_white_1000"
             android:textAlignment="center"
             android:padding="10sp"
             android:paddingLeft="10sp"
@@ -68,7 +68,7 @@
             android:layout_marginRight="10sp"
             android:layout_marginLeft="10sp"
             android:textColorHint="@color/md_grey_100"
-            android:textColor="@color/md_grey_100"
+            android:textColor="@color/md_white_1000"
             android:textAlignment="center"
             android:padding="10sp"
             android:paddingLeft="10sp"
@@ -96,9 +96,10 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10sp"
             android:layout_marginRight="10sp"
-            android:background="@drawable/button_redon"
-            android:text="@string/ingresarLogin"
-            android:textColor="@color/md_grey_100" />
+            android:background="@drawable/button_color"
+            android:hint="@string/ingresarLogin"
+            android:textColorHint="@color/md_red_100"
+            android:textSize="16sp"/>
 
         <View
             android:layout_width="match_parent"
@@ -133,7 +134,7 @@
                 android:text="@string/requerimientos"
                 android:textColor="@color/md_white_1000"
                 android:textSize="16sp"
-                android:padding="2sp"/>
+                android:padding="5sp"/>
 
         </LinearLayout>
     </LinearLayout>
