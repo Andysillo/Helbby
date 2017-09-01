@@ -14,4 +14,6 @@
     <string name="cancel_login">CANCELADO</string>
     <string name="ocurrio_error">ERROR</string>
     <string name="requerimientos"> Al registrarse, confirmo que estoy de acuerdo con las siguientes condiciones de Helbby: </string>
+    <string name="olvidastecontraseña"> ¿Olvidaste tu contraseña?</string>
+    <string name="introduccioOlvidarContra">Introduce tu correo electronico</string>
 </resources>

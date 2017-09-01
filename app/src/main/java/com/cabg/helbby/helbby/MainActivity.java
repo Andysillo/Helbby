@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        recuperar = (Button) findViewById(R.id.recuperarContra);
+        recuperar = (Button) findViewById(R.id.olvidarContra);
         recuperar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
