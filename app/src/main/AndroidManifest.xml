@@ -43,7 +43,8 @@
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-        </activity><activity
+        </activity>
+        <activity
         android:name=".HelbbyActivity"
         android:screenOrientation="portrait"
         android:theme="@style/AppTheme.NoActionBar">

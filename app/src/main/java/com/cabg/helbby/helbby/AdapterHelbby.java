@@ -1,0 +1,46 @@
+package com.cabg.helbby.helbby;
+
+
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
+
+/**
+ * Created by Andy on 2/09/17.
+ */
+
+public class AdapterHelbby extends FragmentPagerAdapter {
+
+    public AdapterHelbby(FragmentManager fm) {
+        super(fm);
+    }
+
+    @Override
+    public Fragment getItem(int position) {
+        if (position == 0){
+            return new PerfilHelbby();
+        }else if (position == 1){
+            return new ChatHelbby();
+        }else if (position == 2){
+            return new PrincipalHelbby();
+        }
+        return null;
+    }
+
+    @Override
+    public int getCount() {
+        return 3;
+    }
+
+    @Override
+    public CharSequence getPageTitle(int position) {
+        if (position == 0){
+            return  "Fragments 1";
+        }else if (position == 1){
+            return  "fragmentos 2";
+        }else if (position == 2){
+            return "fragmentos 3";
+        }
+        return null;
+    }
+}

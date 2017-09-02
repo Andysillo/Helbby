@@ -18,8 +18,8 @@ import com.facebook.login.widget.LoginButton;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView textViewHelbby, textViewRequerimientos;
-    Button registrarse, recuperar;
+    TextView textViewHelbby;
+    Button registrarse, recuperar, ingresar;
     LoginButton loginButton1;
     CallbackManager callbackManager;
 
@@ -69,6 +69,15 @@ public class MainActivity extends AppCompatActivity {
                 Intent intentRecuperar = new Intent(MainActivity.this, RecuperarActivity.class);
                 startActivity(intentRecuperar);
                 overridePendingTransition(R.anim.trans_right_in, R.anim.trans_right_out);
+            }
+        });
+
+        ingresar = (Button) findViewById(R.id.ingresar);
+        ingresar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentIngresar = new Intent(MainActivity. this, HelbbyActivity.class);
+                startActivity(intentIngresar);
             }
         });
     }
