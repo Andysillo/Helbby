@@ -18,28 +18,36 @@ public class AdapterHelbby extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
         if (position == 0){
-            return new PerfilHelbby();
+            return new PregHelbby();
         }else if (position == 1){
-            return new ChatHelbby();
+            return new CategoriasHelbby();
         }else if (position == 2){
             return new PrincipalHelbby();
+        }else if (position == 3){
+            return new ChatHelbby();
+        }else if (position == 4){
+            return new PerfilHelbby();
         }
         return null;
     }
 
     @Override
     public int getCount() {
-        return 3;
+        return 5;
     }
 
     @Override
     public CharSequence getPageTitle(int position) {
         if (position == 0){
-            return  "Fragments 1";
+            return  "Preguntas";
         }else if (position == 1){
-            return  "fragmentos 2";
+            return  "Categorias";
         }else if (position == 2){
-            return "fragmentos 3";
+            return "Principal";
+        }else if (position == 3){
+            return "Chat";
+        }else if (position == 4){
+            return "Perfil";
         }
         return null;
     }

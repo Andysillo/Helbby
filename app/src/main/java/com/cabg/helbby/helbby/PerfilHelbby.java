@@ -15,7 +15,7 @@ public class PerfilHelbby extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.activity_main,container,false);
+        View view = inflater.inflate(R.layout.perfilhelbby_activity,container,false);
         return view;
     }
 }
