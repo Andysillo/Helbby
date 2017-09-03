@@ -18,11 +18,12 @@
             android:layout_above="@+id/tabLayoutHelbby" />
 
         <android.support.design.widget.TabLayout
+            style="@style/TabLayoutStyle"
             android:layout_alignParentBottom="true"
             android:id="@+id/tabLayoutHelbby"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorAccent"/>
+            android:background="@color/md_white_1000"/>
     </RelativeLayout>
 
 </LinearLayout>
