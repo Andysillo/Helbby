@@ -35,20 +35,5 @@ public class AdapterHelbby extends FragmentPagerAdapter {
     public int getCount() {
         return 5;
     }
-
-    @Override
-    public CharSequence getPageTitle(int position) {
-        if (position == 0){
-            return  "Preguntas";
-        }else if (position == 1){
-            return  "Categorias";
-        }else if (position == 2){
-            return "Principal";
-        }else if (position == 3){
-            return "Chat";
-        }else if (position == 4){
-            return "Perfil";
-        }
-        return null;
-    }
+    
 }
