@@ -97,6 +97,8 @@ public class RegistroActivity extends AppCompatActivity {
                                     Toast.makeText(RegistroActivity.this, estado, Toast.LENGTH_SHORT).show();
                                     Intent entrar =  new Intent(RegistroActivity.this, HelbbyActivity.class);
                                     startActivity(entrar);
+                                    overridePendingTransition(R.anim.trans_zoom_forward_in, R.anim.trans_zoom_forward_out);
+
                                 } else {
                                     Toast.makeText(RegistroActivity.this, estado, Toast.LENGTH_SHORT).show();
                                 }

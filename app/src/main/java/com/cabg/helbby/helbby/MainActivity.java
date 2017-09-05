@@ -138,6 +138,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(this, "Usted se ha logeado correctamente",Toast.LENGTH_SHORT).show();
                     Intent entrar =  new Intent(this, HelbbyActivity.class);
                     startActivity(entrar);
+                    overridePendingTransition(R.anim.trans_zoom_forward_in, R.anim.trans_zoom_forward_out);
                 }else {
                     Toast.makeText(this, "La contraseña es incorrecta",Toast.LENGTH_SHORT).show();
                 }
