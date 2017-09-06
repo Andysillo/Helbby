@@ -68,7 +68,7 @@ public class RegistroActivity extends AppCompatActivity {
         buttonRegistrarse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                registrarWebService(getStringET(etNombre),getStringET(etEmail),getStringET(etPass));
+                registrarWebService(getStringET(etNombre).trim(),getStringET(etEmail).trim(),getStringET(etPass).trim());
             }
         });
 
