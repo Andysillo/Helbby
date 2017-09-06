@@ -36,7 +36,7 @@
             android:layout_marginLeft="10sp"
             android:layout_marginRight="10sp"
             android:background="@drawable/button_redon"
-            android:drawableLeft="@mipmap/ic_person_white_24dp"
+            android:drawableLeft="@mipmap/ic_perm_identity_white_24dp"
             android:hint="@string/nombre"
             android:inputType="textPersonName"
             android:padding="10sp"
@@ -58,7 +58,7 @@
             android:background="@drawable/button_redon"
             android:hint="@string/email"
             android:inputType="textEmailAddress"
-            android:drawableLeft="@mipmap/ic_email_white_24dp"/>
+            android:drawableLeft="@mipmap/ic_mail_outline_white_24dp"/>
         <EditText
             android:id="@+id/contraseñaRegistro"
             android:layout_width="match_parent"
@@ -73,7 +73,7 @@
             android:background="@drawable/button_redon"
             android:hint="@string/password"
             android:inputType="textPassword"
-            android:drawableLeft="@mipmap/ic_lock_white_24dp"/>
+            android:drawableLeft="@mipmap/ic_lock_outline_white_24dp"/>
         <EditText
             android:id="@+id/repetircontraseñaRegistro"
             android:layout_width="match_parent"
@@ -88,7 +88,7 @@
             android:background="@drawable/button_redon"
             android:hint="@string/confirmarcontraseña"
             android:inputType="textPassword"
-            android:drawableLeft="@mipmap/ic_lock_white_24dp"/>
+            android:drawableLeft="@mipmap/ic_lock_outline_white_24dp"/>
 
 
         <Button

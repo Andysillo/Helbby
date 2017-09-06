@@ -13,11 +13,11 @@ public class HelbbyActivity extends AppCompatActivity {
     TabLayout tabLayoutHelbby;
     ViewPager viewPagerHelbby;
     private int[] tabIcons = {
-            R.mipmap.ic_email_white_24dp,
-            R.mipmap.ic_person_white_24dp,
             R.mipmap.ic_launcher,
-            R.mipmap.ic_lock_white_24dp,
-            R.mipmap.ic_launcher_round
+            R.mipmap.ic_launcher_round,
+            R.mipmap.ic_launcher,
+            R.mipmap.ic_launcher_round,
+            R.mipmap.ic_launcher
     };
 
 

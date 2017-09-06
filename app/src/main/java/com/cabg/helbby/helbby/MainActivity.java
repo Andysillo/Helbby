@@ -140,7 +140,7 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(entrar);
                     overridePendingTransition(R.anim.trans_zoom_forward_in, R.anim.trans_zoom_forward_out);
                 }else {
-                    Toast.makeText(this, "La contraseña es incorrecta",Toast.LENGTH_SHORT).show();
+                    etPassword.setError("La contraseña es incorrecta");
                 }
 
             }else
