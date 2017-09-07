@@ -64,11 +64,17 @@ public class RegistroActivity extends AppCompatActivity {
         etNombre = (EditText) findViewById(R.id.nombreRegistro);
         etEmail = (EditText) findViewById(R.id.EmailRegistro);
         etPass = (EditText) findViewById(R.id.contraseñaRegistro);
+
         buttonRegistrarse = (Button) findViewById(R.id.registrarse);
         buttonRegistrarse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                registrarWebService(getStringET(etNombre).trim(),getStringET(etEmail).trim(),getStringET(etPass).trim());
+                String password = etPass.getText().toString();
+                if (ValidarPass(password)){
+                    registrarWebService(getStringET(etNombre).trim(),getStringET(etEmail).trim(),getStringET(etPass).trim());
+                }else{
+                    etPass.setError("Tu contraseña debe tener un minimo de 8 caracteres");
+                }
             }
         });
 
@@ -134,6 +140,10 @@ public class RegistroActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         callbackManager.onActivityResult(requestCode, resultCode, data);
+    }
+
+    Boolean ValidarPass(String pass){
+        return pass!=null && pass.trim().length() > 8;
     }
 
     // Metodo para utilizar el boton de retoceder del celular//
