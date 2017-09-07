@@ -1,5 +1,6 @@
 package com.cabg.helbby.helbby;
 
+import android.app.Application;
 import android.content.Context;
 import android.support.v4.app.Fragment;
 
@@ -8,7 +9,7 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
 
-public class VolleyRP {
+public class VolleyRP extends Application {
     
     private static VolleyRP mVolleyRP = null;
     private RequestQueue mRequestQueue;
