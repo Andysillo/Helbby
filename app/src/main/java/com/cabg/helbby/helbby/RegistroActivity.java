@@ -3,6 +3,7 @@ package com.cabg.helbby.helbby;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -24,6 +25,8 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.HashMap;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 
 public class RegistroActivity extends AppCompatActivity {
@@ -69,10 +72,12 @@ public class RegistroActivity extends AppCompatActivity {
         buttonRegistrarse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String password = etPass.getText().toString();
-                if (ValidarPass(password)){
-                    registrarWebService(getStringET(etNombre).trim(),getStringET(etEmail).trim(),getStringET(etPass).trim());
-                }else{
+                String password = etPass.getText().toString().trim();
+                String email = etEmail.getText().toString().trim();
+                if (ValidarPass(password) && isEmailValid(email)) {
+                    registrarWebService(getStringET(etNombre).trim(), getStringET(etEmail).trim(), getStringET(etPass).trim());
+                } else {
+                    etEmail.setError("Email invalido");
                     etPass.setError("Tu contraseña debe tener un minimo de 8 caracteres");
                 }
             }
@@ -146,6 +151,19 @@ public class RegistroActivity extends AppCompatActivity {
         return pass!=null && pass.trim().length() > 8;
     }
 
+    public static boolean isEmailValid(String email) {
+        boolean isValid = false;
+
+        String expression = "^[\\w\\.-]+@([\\w\\-]+\\.)+[A-Z]{2,4}$";
+        CharSequence inputStr = email;
+
+        Pattern pattern = Pattern.compile(expression, Pattern.CASE_INSENSITIVE);
+        Matcher matcher = pattern.matcher(inputStr);
+        if (matcher.matches()) {
+            isValid = true;
+        }
+        return isValid;
+    }
     // Metodo para utilizar el boton de retoceder del celular//
     @Override
     public void onBackPressed() {
