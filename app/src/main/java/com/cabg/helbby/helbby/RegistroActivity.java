@@ -33,7 +33,7 @@ public class RegistroActivity extends AppCompatActivity {
 
     private static final String IP_REGISTRAR = "https://helbby.000webhostapp.com/PHPhelbby/Registro_INSERT.php";
     LoginButton loginButton2;
-    EditText etNombre, etEmail, etPass;
+    EditText etNombre, etEmail, etPass, etConfir;
     CallbackManager callbackManager;
     Button buttonRegistrarse;
     RequestQueue mRequest;
@@ -67,6 +67,7 @@ public class RegistroActivity extends AppCompatActivity {
         etNombre = (EditText) findViewById(R.id.nombreRegistro);
         etEmail = (EditText) findViewById(R.id.EmailRegistro);
         etPass = (EditText) findViewById(R.id.contraseñaRegistro);
+        etConfir = (EditText) findViewById(R.id.confirmarContraseña);
 
         buttonRegistrarse = (Button) findViewById(R.id.registrarse);
         buttonRegistrarse.setOnClickListener(new View.OnClickListener() {
@@ -74,7 +75,8 @@ public class RegistroActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String password = etPass.getText().toString().trim();
                 String email = etEmail.getText().toString().trim();
-                if (ValidarPass(password) && isEmailValid(email)) {
+                String confirmar = etConfir.getText().toString().trim();
+                if (ValidarPass(password) && isEmailValid(email) && confirmar.equals(password)) {
                     registrarWebService(getStringET(etNombre).trim(), getStringET(etEmail).trim(), getStringET(etPass).trim());
                 } else {
                     etEmail.setError("Email invalido");

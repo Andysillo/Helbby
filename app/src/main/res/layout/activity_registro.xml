@@ -75,7 +75,7 @@
             android:inputType="textPassword"
             android:drawableLeft="@mipmap/ic_lock_outline_white_24dp"/>
         <EditText
-            android:id="@+id/repetircontraseñaRegistro"
+            android:id="@+id/confirmarContraseña"
             android:layout_width="match_parent"
             android:layout_height="50sp"
             android:layout_marginRight="10sp"
